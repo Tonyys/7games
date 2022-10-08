@@ -1,0 +1,100 @@
+.production
+  @media (max-width: 990px)
+    padding: 0 60px
+  @media (max-width: 640px)
+    padding: 0 30px
+  @media (max-width: 500px)
+    padding: 0 10px
+  .title
+    max-width: 626px
+    color: #3E2D10
+    margin-bottom: 30px
+    @media (max-width: 640px)
+      margin-bottom: 20px
+  &__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+  .title
+    max-width: 626px
+    color: #3E2D10
+  &__items
+    width: 100%
+    display: flex
+    justify-content: center
+    gap: 25px
+    @media (max-width: 990px)
+      flex-direction: column
+      align-items: center
+  &__item
+    width: 22%
+    display: flex
+    align-items: center
+    justify-content: center
+    @media (max-width: 990px)
+      width: 100%
+    &.dark
+      padding: 25px 30px
+      width: 39%
+      background: rgba(160, 153, 125, 0.7)
+      color: white
+      @media (max-width: 990px)
+        width: 100%
+        border-radius: 10px
+      @media (max-width: 640px)
+        padding: 20px
+      .production__text
+        max-width: 378px
+        color: white
+      span
+        color: #3E2D10
+    &:nth-child(1)
+      justify-content: end
+      border-bottom-right-radius: 10px
+      border-top-right-radius: 10px
+      @media (max-width: 990px)
+        justify-content: center
+    &:nth-child(3)
+      justify-content: start
+      border-bottom-left-radius: 10px
+      border-top-left-radius: 10px
+      @media (max-width: 990px)
+        justify-content: center
+  &__text
+    max-width: 408px
+    width: 100%
+    text-align: center
+    letter-spacing: normal
+    color: #1D181B
+    span
+      color: #F3A714
+  &__info
+    margin-top: 30px
+    max-width: 848px
+    width: 100%
+    gap: 28px
+    display: flex
+    justify-content: space-between
+    @media (max-width: 990px)
+      max-width: none
+      flex-direction: column
+    @media (max-width: 640px)
+      margin-top: 20px
+      gap: 20px
+    &-content
+      padding: 30px
+      max-width: 408px
+      width: 100%
+      border: 2px solid #666257
+      border-radius: 10px
+      background-color: transparent
+      color: #1D181B
+      text-align: center
+      letter-spacing: normal
+      display: flex
+      @media (max-width: 990px)
+        max-width: none
+    &-text
+      margin: auto
+      span
+        color: #F3A714

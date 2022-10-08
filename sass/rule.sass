@@ -1,0 +1,120 @@
+.rule
+  padding-bottom: 240px
+  background-color: #2D2C31
+  position: relative
+  z-index: 3
+  margin-top: -2px
+  &__bg-bottom
+    width: 100%
+    height: 240px
+    position: absolute
+    left: 0
+    bottom: 0
+    object-fit: cover
+  &__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+  .title
+    margin-bottom: 30px
+    @media (max-width: 640px)
+      margin-bottom: 20px
+  &__message
+    background: rgba(160, 153, 125, 0.5)
+    border-radius: 10px
+    padding: 15px 50px
+    margin-bottom: 70px
+    text-align: center
+    @media (max-width: 1200px)
+      margin-bottom: 100px
+    @media (max-width: 990px)
+      margin-bottom: 70px
+  &__items
+    display: flex
+    justify-content: space-between
+    gap: 30px
+    @media (max-width: 990px)
+      flex-direction: column
+      row-gap: 70px
+  &__item
+    width: 33%
+    padding: 0 15px 20px 15px
+    border: 2px solid #666257
+    border-radius: 10px
+    background-color: transparent
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media (max-width: 990px)
+      width: 100%
+    &-wrapper
+      margin-bottom: 13px
+      margin-top: -55px
+      width: 90%
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 10px
+      padding: 17px 10px
+      background: rgba(160, 153, 125, 0.7)
+      border-radius: 10px
+      @media (max-width: 1200px)
+        margin-top: -70px
+        min-height: 143px
+        justify-content: center
+      @media (max-width: 990px)
+        min-height: auto
+        margin-top: -55px
+    &-suptitle
+      font-size: 18px
+      color: white
+      font-weight: 700
+      text-transform: uppercase
+    &-title
+      font-size: 24px
+      font-weight: 700
+      text-transform: uppercase
+      color: #F3A714
+      text-align: center
+      @media (max-width: 640px)
+        font-size: 20px
+    &-subtitle
+      text-align: center
+  &__bottom
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    img
+      width: 100%
+      position: relative
+      z-index: 2
+  &__button-bg
+    max-width: 900px
+    width: 100%
+    height: 120px
+    background: rgba(160, 153, 125, 0.7)
+    border-radius: 10px
+    position: absolute
+    bottom: 0
+    z-index: 1
+    @media (max-width: 1200px)
+      height: 90px
+    @media (max-width: 990px)
+      position: relative
+  &__button
+    padding: 15px 10px
+    max-width: 408px
+    width: 100%
+    font-size: 14px
+    text-align: center
+    background-color: #F3A714
+    border-radius: 10px
+    position: absolute
+    bottom: 35px
+    z-index: 3
+    @media (max-width: 1200px)
+      bottom: 20px
+    @media (max-width: 990px)
+      max-width: 315px

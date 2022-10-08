@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'a_Algerius';
+    src: url('AAlgerius.woff2') format('woff2'),
+        url('AAlgerius.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

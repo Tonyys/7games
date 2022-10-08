@@ -1,0 +1,116 @@
+.telegram
+  position: relative
+  z-index: 2
+  @media (max-width: 640px)
+    overflow: hidden
+  &__inner
+    padding: 65px 110px 80px
+    background: rgba(160, 153, 125, 0.5)
+    backdrop-filter: blur(7.5px)
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    @media (max-width: 1200px)
+      padding: 65px 85px 80px
+    @media (max-width: 990px)
+      padding: 65px 40px 80px
+    @media (max-width: 759px)
+      padding: 65px 20px 80px
+    @media (max-width: 640px)
+      padding: 20px 10px
+  .title
+    position: relative
+    z-index: 2
+    img
+      @media (max-width: 640px)
+        width: 29px
+        height: 29px
+        margin-bottom: -3px
+  &__subtitle
+    max-width: 627px
+    text-align: center
+    margin-top: 35px
+    margin-bottom: 20px
+    color: #1D181B
+    position: relative
+    z-index: 2
+    @media (max-width: 640px)
+      margin-top: 20px
+      margin-bottom: 15px
+  &__button
+    padding: 10px
+    border-radius: 10px
+    max-width: 408px
+    width: 100%
+    text-align: center
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 700
+    color: white
+    background-color: #1096C6
+    position: relative
+    z-index: 2
+  &__decoration
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    img
+      position: absolute
+      &:nth-child(1)
+        top: 55%
+        left: 3%
+        width: 40px
+        height: 40px
+        @media (max-width: 640px)
+          top: 17%
+      &:nth-child(2)
+        top: 26%
+        left: 6%
+        width: 77px
+        height: 77px
+        transform: rotate(62deg)
+        @media (max-width: 990px)
+          opacity: 0
+      &:nth-child(3)
+        bottom: 9%
+        left: 13%
+        width: 140px
+        height: 140px
+        transform: rotate(-46deg)
+        @media (max-width: 1200px)
+          opacity: 0
+      &:nth-child(4)
+        bottom: 35%
+        right: 16%
+        width: 70px
+        height: 70px
+        transform: rotate(80deg)
+        @media (max-width: 1200px)
+          right: 10%
+        @media (max-width: 759px)
+          right: 1%
+          top: 21%
+          bottom: auto
+        @media (max-width: 640px)
+          right: -6%
+          top: 14%
+      &:nth-child(5)
+        top: 30%
+        right: 8%
+        width: 40px
+        height: 40px
+        transform: rotate(62deg)
+        @media (max-width: 990px)
+          opacity: 0
+      &:nth-child(6)
+        bottom: 15%
+        right: 2%
+        width: 120px
+        height: 120px
+        @media (max-width: 1200px)
+          opacity: 0
